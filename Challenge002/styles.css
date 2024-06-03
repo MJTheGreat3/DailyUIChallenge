@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color:#005C78;
+}
+
+.container {
+    margin: 20px auto;
+    width: 800px;
+    padding: 30px;
+}
+
+.bg-light {
+    background-color: #F3F7EC !important;
+}
+
+.card.box1 {
+    width: 350px;
+    height: 500px;
+    background-color: #005C78;
+    color: #F3F7EC;
+    border-radius: 0;
+}
+
+.card.box2 {
+    width: 450px;
+    height: 580px;
+    background-color: #F3F7EC;
+    border-radius: 0;
+    color: #E88D67;
+}
+
+.title-text {
+    color: black;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.box2 .btn.btn-primary.bar {
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    color: #E88D67;
+}
+
+.box2 .btn.btn-primary.bar:hover {
+    color: #006989;
+}
+
+.box1 .btn.btn-primary {
+    background-color: #E88D67;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+}
+
+.box1 .btn.btn-primary:hover {
+    background-color: #F3F7EC;
+    color: #005C78;
+}
+
+.btn.btn-success {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #E88D67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn.btn-success:hover {
+    background-color: #E88D67;
+    color: #F3F7EC;
+}
+
+.nav.nav-tabs {
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav.nav-tabs .nav-item .nav-link {
+    border: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    font-size: 14px
+}
+
+.nav.nav-tabs .nav-item .nav-link:hover {
+    border-bottom: 2px solid #e69d7e;
+    color: #E88D67;
+}
+
+.nav.nav-tabs .nav-item .nav-link.active {
+    border: none;
+    border-bottom: 2px solid #e69d7e;
+    background-color: #F3F7EC;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #006989dc;
+    background-color: #F3F7EC;
+    box-shadow: none;
+    height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0px;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+}
+
+.inputWithIcon {
+    position: relative;
+}
+
+img {
+    width: 50px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.inputWithIcon span {
+    position: absolute;
+    right: 0px;
+    bottom: 9px;
+    color: #E88D67;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #E88D67;
+    background-color: #F3F7EC;
+}
+
+.btn-outline-primary {
+    color: black;
+    background-color: #ddd;
+    border: 0px;
+}
+
+.btn-outline-primary:hover {
+    color: #F3F7EC;
+    background-color: #E88D67;
+    border: 0px;
+}
+
+.btn-check:active+.btn-outline-primary,
+.btn-check:checked+.btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    color: #F3F7EC;
+    background-color: #E88D67;
+    box-shadow: none;
+    border: 0px;
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n+3),
+.btn-group>:not(.btn-check)+.btn {
+    border-radius: 50px;
+    margin-right: 20px
+}
+
+form {
+    font-size: 14px
+}
+
+form .btn.btn-primary {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E88D67;
+    border: 0px;
+}
+
+form .btn.btn-primary:hover {
+    background-color: #005C78;
+}
+
+@media (max-width:750px) {
+    .container {
+        padding: 10px;
+        width: 100%
+    }
+
+    .text-green {
+        font-size: 14px
+    }
+
+    .card.box1,
+    .card.box2 {
+        width: 100%
+    }
+
+    .nav.nav-tabs .nav-item .nav-link {
+        font-size: 12px
+    }
+}
